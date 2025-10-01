@@ -9,7 +9,9 @@
   },
   "devDependencies": {
     "vite": "^7.0.0",
-    "vite-plugin-combo": "file:../deps/combo_vite/npm-packages/vite-plugin-combo"
+    "vite-plugin-combo": "file:../deps/combo_vite/npm-packages/vite-plugin-combo",
+    "@tailwindcss/vite": "^4.0.0",
+    "tailwindcss": "^4.0.0"
   },
   "dependencies": {
     "@fontsource-variable/instrument-sans": "^5.2.7",
