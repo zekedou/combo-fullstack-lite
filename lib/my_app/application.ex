@@ -8,6 +8,7 @@ defmodule MyApp.Application do
     end
 
     children = [
+      MyApp.Telemetry,
       MyApp.PubSub,
       MyApp.Core.Supervisor,
       MyApp.Web.Supervisor

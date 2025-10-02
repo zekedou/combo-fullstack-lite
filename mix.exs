@@ -44,6 +44,7 @@ defmodule MyApp.MixProject do
       {:combo_ecto, "~> 0.1"},
       {:combo_vite, "~> 0.5"},
       {:bandit, "~> 1.8"},
+      {:needle_telemetry, "~> 0.6"},
       {:ex_check, ">= 0.0.0", only: [:dev], runtime: false},
       {:dialyxir, ">= 0.0.0", only: [:dev], runtime: false}
     ]
