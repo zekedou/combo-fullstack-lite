@@ -34,7 +34,7 @@ $ mix assets.deploy
 $ MIX_ENV=prod mix release
 ```
 
-Here are some useful release commands you can run in any release environment:
+Here are some useful release commands you can run:
 
 ```
 # To start your system with the Combo server running
@@ -51,6 +51,15 @@ $ _build/prod/rel/my_app/bin/demo
 ```
 
 See https://hexdocs.pm/mix/Mix.Tasks.Release.html for more information about Elixir releases.
+
+#### start the application
+
+```
+$ export SECRET_KEY_BASE=$(mix combo.gen.secret)
+$ export DB_URL=ecto://postgres:postgres@127.0.0.1/my_app
+$ _build/prod/rel/my_app/bin/migrate
+$ _build/prod/rel/my_app/bin/serve
+```
 
 ## Deployment
 
