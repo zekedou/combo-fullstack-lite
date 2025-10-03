@@ -12,7 +12,7 @@
     <% end %>
     <.vite_assets names={["src/css/app.css", "src/js/app.js"]} />
   </head>
-  <body>
+  <body class="font-sans antialiased">
     {@inner_content}
   </body>
 </html>
