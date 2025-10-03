@@ -8,13 +8,13 @@
     "test": "true"
   },
   "devDependencies": {
-    "vite": "^7.0.0",
-    "vite-plugin-combo": "file:../deps/combo_vite/npm-packages/vite-plugin-combo",
     "@tailwindcss/vite": "^4.0.0",
-    "tailwindcss": "^4.0.0"
+    "tailwindcss": "^4.0.0",
+    "vite": "^7.0.0",
+    "vite-plugin-combo": "file:../deps/combo_vite/npm-packages/vite-plugin-combo"
   },
   "dependencies": {
-    "@fontsource-variable/instrument-sans": "^5.2.7",
+    "@fontsource-variable/inter": "^5.2.8",
     "combo": "file:../deps/combo/npm-packages/combo"
   }
 }
