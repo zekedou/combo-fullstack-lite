@@ -2,8 +2,8 @@
 
 A Combo project using:
 
-- Vite, TailwindCSS
-- PostgreSQL
+- Ecto, PostgreSQL
+- pnpm, Vite, TailwindCSS
 
 ## Requirements
 

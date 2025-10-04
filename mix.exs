@@ -56,8 +56,8 @@ defmodule MyApp.MixProject do
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
       "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
       "ecto.reset": ["ecto.drop", "ecto.setup"],
-      "assets.setup": ["cmd --cd assets npm install --install-links"],
-      "assets.build": ["cmd --cd assets npm run build"],
+      "assets.setup": ["cmd --cd assets pnpm install"],
+      "assets.build": ["cmd --cd assets pnpm run build"],
       "assets.clean": ["cmd rm -rf priv/static/build"],
       "assets.deploy": ["assets.clean", "assets.build"]
     ]
