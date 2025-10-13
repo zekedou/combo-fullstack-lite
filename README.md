@@ -19,9 +19,9 @@ $ mix setup
 $ iex -S mix combo.serve
 ```
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from web browser.
+Now you can visit `http://localhost:4000` from web browser.
 
-### Build release
+### Build the release
 
 ```
 $ mix deps.get --only prod
@@ -45,17 +45,20 @@ $ _build/prod/rel/my_app/bin/my_app remote
 $ _build/prod/rel/my_app/bin/demo
 ```
 
-See https://hexdocs.pm/mix/Mix.Tasks.Release.html for more information about Elixir releases.
+See [Mix.Tasks.Release](https://hexdocs.pm/mix/Mix.Tasks.Release.html) for more information about Elixir releases.
 
-#### start the application
+### Run the release in production
+
+> No deployment tools are used here. Only essential setup and steps are covered.
 
 ```
-$ export SECRET_KEY_BASE=$(mix combo.gen.secret)
+$ export SECRET_KEY_BASE=<a very long secret>
 $ export DB_URL=ecto://postgres:postgres@127.0.0.1/my_app
+$ export NODE_ENV=production
 $ _build/prod/rel/my_app/bin/migrate
 $ _build/prod/rel/my_app/bin/serve
 ```
 
-## Deployment
+## License
 
-Ready to run in production? Please [check out deployment guides](https://hexdocs.pm/combo/deployment.html).
+MIT

@@ -2,10 +2,6 @@ defmodule MyApp.Core.Release do
   @moduledoc """
   Release-related tasks for production environment without Mix installed.
 
-  ## Requirements
-
-    * Ecto v3.4+
-
   ## Functions
 
   These module provides multiple public functions:
