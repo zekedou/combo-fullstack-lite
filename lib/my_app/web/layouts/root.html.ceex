@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ssr={@inertia_ssr}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content={get_csrf_token()} />
     <link rel="icon" href="/favicon.ico" />
-    <%= if title = assigns[:page_title] do %>
-      <title>{"#{title} · MyApp.Web"}</title>
-    <% else %>
-      <title>MyApp.Web</title>
-    <% end %>
-    <.vite_assets names={["src/css/app.css", "src/js/app.js"]} />
+    <.inertia_title>
+      {if title = assigns[:page_title], do: "#{title} - MyApp", else: "MyApp"}
+    </.inertia_title>
+    <.inertia_head content={@inertia_head} />
+    <.vite_react_refresh />
+    <.vite_assets names={["src/js/app.jsx"]} />
   </head>
   <body class="font-sans antialiased">
     {@inner_content}

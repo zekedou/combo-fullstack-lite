@@ -42,6 +42,7 @@ defmodule MyApp.Web do
 
       import Plug.Conn
       import Combo.Conn
+      import Combo.Inertia.Conn
 
       import Combo.HTML.Components,
         only: [
@@ -76,6 +77,7 @@ defmodule MyApp.Web do
     quote do
       use Combo.HTML
       import Combo.Vite.HTML
+      import Combo.Inertia.HTML
 
       alias MyApp.Web.Layouts
 

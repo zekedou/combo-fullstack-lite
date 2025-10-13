@@ -31,3 +31,6 @@ my_app-*.tar
 # Ignore files that are produced by assets build tools.
 /priv/static/build/
 /priv/static/__hot__
+
+# Ignore files that are produced for SSR by assets build tools.
+/priv/ssr/

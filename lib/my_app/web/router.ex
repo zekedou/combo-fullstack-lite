@@ -9,6 +9,7 @@ defmodule MyApp.Web.Router do
     plug :protect_from_forgery
     plug :put_secure_browser_headers
     plug Combo.Vite.Plug
+    plug Combo.Inertia.Plug
   end
 
   pipeline :api do
