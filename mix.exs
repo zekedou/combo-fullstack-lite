@@ -40,10 +40,11 @@ defmodule MyApp.MixProject do
       {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
       {:uuidv7, "~> 1.0"},
-      {:combo, "~> 0.4"},
+      {:combo, "~> 0.5"},
       {:combo_ecto, "~> 0.1"},
-      {:combo_vite, "~> 0.6"},
+      {:combo_vite, "~> 0.7"},
       {:bandit, "~> 1.8"},
+      {:jason, ">= 0.0.0"},
       {:ex_check, ">= 0.0.0", only: [:dev], runtime: false},
       {:dialyxir, ">= 0.0.0", only: [:dev], runtime: false}
     ]
