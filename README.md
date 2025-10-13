@@ -1,14 +1,9 @@
 # MyApp
 
-A Combo project using:
+A project using:
 
-- Ecto, PostgreSQL
-- pnpm, Vite, TailwindCSS
-
-## Requirements
-
-- Elixir
-- Node.js
+- Elixir, Combo, Ecto, PostgreSQL.
+- Node.js, pnpm, Vite, TailwindCSS, Inertia, React.
 
 ## Quick start
 
