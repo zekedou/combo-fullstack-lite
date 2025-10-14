@@ -18,7 +18,7 @@ config :my_app, MyApp.Core.Repo,
   username: "postgres",
   password: "postgres",
   hostname: "localhost",
-  database: "my_app",
+  database: "my_app_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
