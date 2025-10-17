@@ -1,9 +1,9 @@
 # MyApp
 
-A project using:
+A project template using:
 
 - Elixir, Combo, Ecto, PostgreSQL.
-- Node.js, pnpm, Vite, TailwindCSS, Inertia, React.
+- Node.js, TypeScript, pnpm, Vite, Inertia, React, TailwindCSS.
 
 ## Quick start
 
