@@ -17,8 +17,8 @@ function ssr_mode() {
 createInertiaApp({
   resolve: (name) =>
     resolvePageComponent(
-      `./pages/${name}.jsx`,
-      import.meta.glob("./pages/**/*.jsx", { eager: true }),
+      `./pages/${name}.tsx`,
+      import.meta.glob("./pages/**/*.tsx", { eager: true }),
     ),
   setup({ el, App, props }) {
     if (ssr_mode()) {

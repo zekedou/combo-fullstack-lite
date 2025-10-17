@@ -1,8 +1,8 @@
 import logo from "@/images/logo.svg"
 
-export default function Home({}) {
+export default function Home() {
   return (
-    <div className="min-h-screen p-6 flex justify-center items-center bg-[#fdfdfc] text-[#706f6c] dark:bg-[#0a0a0a] dark:text-[#a1a09a]">
+    <div className="flex min-h-screen items-center justify-center bg-[#fdfdfc] p-6 text-[#706f6c] dark:bg-[#0a0a0a] dark:text-[#a1a09a]">
       <main className="flex flex-col space-y-6">
         <img className="w-full max-w-3xs" src={logo} />
         <div>

@@ -3,7 +3,7 @@
 A project template using:
 
 - Elixir, Combo, Ecto, PostgreSQL.
-- Node.js, TypeScript, pnpm, Vite, Inertia, React, TailwindCSS.
+- TypeScript, Node.js, pnpm, Vite, Inertia, React, TailwindCSS.
 
 ## Quick start
 

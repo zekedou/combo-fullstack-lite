@@ -27,18 +27,26 @@
 //         ),
 //     })
 //
-export async function resolvePageComponent(name, pages, options) {
-  if (typeof pages[name] === "undefined" && options?.fallbackName) {
-    name = options.fallbackName
+
+type EagerPages<T> = Record<string, T>
+type LazyPages<T> = Record<string, () => Promise<T>>
+
+export async function resolvePageComponent<T>(
+  page: string,
+  pages: EagerPages<T> | LazyPages<T>,
+  options?: { fallbackName?: string },
+): Promise<T> {
+  if (typeof pages[page] === "undefined" && options?.fallbackName) {
+    page = options.fallbackName
   }
 
-  const page = pages[name]
+  const resolvedPage = pages[page]
 
-  if (typeof page !== "undefined") {
-    // When code spiltting is enabled, page is a function.
-    // Or, page is an object.
-    return typeof page === "function" ? page() : page
-  } else {
-    throw new Error(`Page not found: ${name}`)
+  if (typeof resolvedPage === "undefined") {
+    throw new Error(`Page not found: ${page}`)
   }
+
+  // When code spiltting is enabled, page is a function.
+  // Or, page is an object.
+  return typeof resolvedPage === "function" ? (resolvedPage as () => Promise<T>)() : resolvedPage
 }
