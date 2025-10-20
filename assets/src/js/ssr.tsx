@@ -1,12 +1,15 @@
-import { type Page } from "@inertiajs/core"
+import type { Page } from "@inertiajs/core"
 import { createInertiaApp } from "@inertiajs/react"
 import ReactDOMServer from "react-dom/server"
 import { resolvePageComponent } from "./inertia-helper"
+
+const appName = "MyApp"
 
 export function render(page: Page) {
   return createInertiaApp({
     page,
     render: ReactDOMServer.renderToString,
+    title: (title) => (title ? `${title} - ${appName}` : appName),
     resolve: (name) =>
       resolvePageComponent(
         `./pages/${name}.tsx`,
