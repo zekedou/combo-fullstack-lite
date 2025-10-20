@@ -10,7 +10,7 @@
     </.inertia_title>
     <.inertia_head content={@inertia_head} />
     <.vite_react_refresh />
-    <.vite_assets names={["src/js/app.tsx"]} />
+    <.vite_assets names={["src/app.tsx"]} />
   </head>
   <body class="font-sans antialiased">
     {@inner_content}

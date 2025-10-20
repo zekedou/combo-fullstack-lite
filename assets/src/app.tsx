@@ -1,7 +1,7 @@
 import "vite/modulepreload-polyfill"
 
 import "@fontsource-variable/inter"
-import "../css/app.css"
+import "./app.css"
 
 import { createInertiaApp } from "@inertiajs/react"
 import { createRoot, hydrateRoot } from "react-dom/client"

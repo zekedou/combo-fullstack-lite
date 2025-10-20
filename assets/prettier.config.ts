@@ -12,7 +12,7 @@ const config: Config = {
   singleAttributePerLine: false,
   plugins: ["prettier-plugin-tailwindcss"],
   tailwindFunctions: ["clsx", "cn"],
-  tailwindStylesheet: "src/css/app.css",
+  tailwindStylesheet: "src/app.css",
 }
 
 export default config
