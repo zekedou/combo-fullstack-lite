@@ -59,6 +59,14 @@ $ _build/prod/rel/my_app/bin/migrate
 $ _build/prod/rel/my_app/bin/serve
 ```
 
+## FAQ
+
+### How do I upgrade?
+
+You have full ownership of the code, so feel free to tweak, customize, and build your application however you like. Once you've started, there's no need to sync with starter updates.
+
+However, if you would like to track the changes to this starter, subscribe to the RSS feed at https://github.com/zekedou/combo-react-starter/commits/main.atom for to get timely notifications about starter updates.
+
 ## License
 
 MIT
